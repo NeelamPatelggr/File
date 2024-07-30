@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+    <div>
+        <center>
+    <h4>REGISTRATION FORM</h4>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <input type="text" placeholder="Username*" id="uname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" placeholder="Email Name*" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" placeholder="Phone Number*" id="phn">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" placeholder="Password*" id="pass">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" placeholder="Confirm Pasword*" id="cnp">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" placeholder="ID*" id="ids">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><input type="checkbox" id="yn">I do accept the TERMS & CONDITIONS of this site</p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Register Now" id="a" onclick="f()">
+                </td>
+            </tr>
+        </table>
+    </form>
+        </center>
+    </div>
+    </section>
+    <script>
+        function f()
+        {
+            let uname= document.getElementById("uname").value;
+            let nameval  = /^[A-Z][a-z]+$/;
+            if(uname.search(nameval)==0)
+        {
+            document.getElementById("uname").style.border = "1px solid blue";
+        }
+        else
+        {
+            document.getElementById("uname").style.border = "1px solid red";
+        }
+
+            let email= document.getElementById("email").value;
+            let emailval = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if(email.search(emailval)==0)
+            {
+            document.getElementById("email").style.border = "1px solid blue";
+        }
+        else
+        {
+            document.getElementById("email").style.border = "1px solid red";
+        }
+
+
+            let pass= document.getElementById("pass").value;
+            let passval = /^[A-Za-z]\w{7,14}$/;
+            if(pass.search(passval)==0)
+            {
+            document.getElementById("pass").style.border = "1px solid blue";
+        }
+        else
+        {
+            document.getElementById("pass").style.border = "1px solid red";
+        }
+
+
+            let phn= document.getElementById("phn").value;
+            let numberval = /[0-9]{10}$/; 
+            if(phn.search(numberval)==0)
+        {
+            document.getElementById("phn").style.border = "1px solid blue";
+        }
+        else
+        {
+            document.getElementById("phn").style.border = "1px solid red";
+        }
+
+
+            let cnp= document.getElementById("cnp").value;
+            let passsval = /^[A-Za-z]\w{7,14}$/;
+            if(cnp.search(passsval)==0)
+            {
+            document.getElementById("cnp").style.border = "1px solid blue";
+        }
+        else
+        {
+            document.getElementById("cnp").style.border = "1px solid red";
+        }
+        
+            let ids= document.getElementById("ids").value;
+            let yn= document.getElementById("yn").value;
+
+
+        }
+    </script>
+    <style>
+        body
+        {
+            background-color: rgb(87, 145, 251);
+        }
+        input
+        {
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+            border-radius: 5px;
+        }
+        ::placeholder
+        {
+            color: white;
+        }
+        form p
+        {
+            font-size: 10px;
+            color: white;
+        }
+        #a
+        {
+            border-radius: 30px;
+            width: 190px;
+            background-color: red;
+            border-color: red;
+        }
+        div
+        {
+            background-color: rgb(77, 77, 242);
+            width: 200px;
+            border-radius: 10px;    
+            padding: 10px;
+        }
+        section
+        {
+            padding: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+    
+</body>
+</html>

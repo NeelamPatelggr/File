@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiring</title>
+</head>
+<body>
+    <section>
+        <div>
+    <p><b>PNR No.</b></p> 
+    <input type="number">
+    <button>Search</button>
+
+
+    <table>
+        <tr id="aaa">
+            <th>Train No.</th>
+            <th>Source Station</th>
+            <th>Dep. Date Time</th>
+            <th>Desti.Station</th>
+            <th>Arr.Date Time</th>
+        </tr>
+        <tr>
+            <td><input type="number"></td>
+            <td><input type="text"></td>
+            <td><input type="datetime-local"></td>
+            <td><input type="text"></td>
+            <td><input type="datetime-local"></td>
+        </tr>
+    </table>
+        </div>
+    </section>
+
+    <p id="q"><b> Retiring Room Required at:</b></p>
+
+    <section>
+    <form>
+    <table id="taa">
+        <tr>
+            <th>Source Station</th>
+            <th>Destination Station</th>
+        </tr>
+        
+        
+        <tr>
+           <td>
+            <center>
+            <select>
+                <option value="">Select Source</option>
+                <option value="">Jaipur Junction</option>
+                <option value="">Alwar Station</option>
+                <option value="">Ajmer Station</option>
+                <option value="">Jodhpur Station</option>
+            </select>
+            </center>
+    </td>
+            <td>
+                <center><select>
+                <option value="">Select Source</option>
+                <option value="">Udaipur Station</option>
+                <option value="">Churu Station</option>
+                <option value="">Bikaner Station</option>
+                <option value="">Jaisalmer Station</option>
+            </select></center></td>
+
+        </tr>
+    
+    </table>
+    </form>
+    </section>
+
+    <p id="qq"><b>Booking Details:</b></p>
+
+    <form>
+        <table id="at">
+            <tr>
+                <th>Check-in</th>
+                <th>Check-out</th>
+                <th>Bed Type</th>
+                <th>AC Status</th>
+                <th>Quota</th>
+            </tr>
+            <tr>
+               <td><center><input type="date"></center></td>
+
+               <td><center><input type="date"></center></td>
+           
+            <td><center><select>
+                <option value="">Select</option>
+                <option value="">Double Bed</option>
+                <option value="">Single Bed</option>
+                <option value="">Dormitory</option>
+            </select></center></td>
+            <td><center><select>
+                <option value="">All</option>
+                <option value="">Normal Mode</option>
+                <option value="">Average</option>
+            </select></center></td>
+            <td><center><select>
+                <option value="">Select</option>
+                <option value="">General</option>
+                <option value="">Ladies Quota</option>
+                <option value="">Senior-Citizen</option>
+            </select></center></td>
+        </tr>
+        </table>
+    </form>
+
+        <div id="ss">
+        <p>Note:- For one passengers one single Bed Room or one Double Bed Room or one Bed in Dormitory can be allocated.</p>
+        </div>
+        <div id="f">
+            <table border="1" id="ccc">
+                <tr>
+                    <th>Select</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Age</th>
+                </tr>
+
+            </table>
+        </div>
+    </section>
+    <style>
+        button
+        {
+            color: white;
+            background-color: rgb(34, 129, 244);
+            border-radius: 20px;
+            border-color: rgb(49, 146, 249);
+        }
+        #aaa
+        {
+            background-color: rgb(234, 234, 220);
+        }
+        #ccc
+        {
+            width: 600px;
+        }
+        #ss
+        {
+            color: red;
+        }
+        button:active
+        {
+            background-color: rgb(87, 243, 103);
+            border-color: rgb(82, 248, 82);
+
+        }
+        #q, #qq
+        {
+            background-color: rgb(248, 247, 229);
+        }
+      
+
+        #at
+        {
+            width: 800px;
+        }
+        #taa
+        {
+            width: 370px;
+        }
+
+    </style>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div id="a">
+
+        </div>
+        <div>
+            <center><h1>Send Us A Message</h1></center>
+            <table border="1">
+                <tr>
+                    <td><p>Tell Us About Your Name:*</p></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="name" placeholder="First Name"><input type="text" id="lname" placeholder="Last Name"></td>
+                </tr>
+            </table>
+            <table border="1">
+                <tr>
+                    <td><p>Enter Your Email Name:*</p></td>
+                </tr>
+                <tr>
+                    <td><input type="email" id="eman" placeholder="xyz@gmail.com"></td>
+                </tr>
+            </table>
+            <table border="1">
+                <tr>
+                    <td><p>Enter Your Phone Number:*</p></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="phn" placeholder="1234567899"></td>
+                </tr>
+            </table>
+            <table border="1">
+                <tr>
+                    <td><p>Message:*</p></td>
+                </tr>
+                <tr>
+                    <td><textarea rows="5" cols="78"></textarea></td>
+                </tr>
+            </table>
+            <center><button onclick="f()">SEND MESSAGE</button></center>
+            
+            
+        </div>
+    </section>
+    <script>
+        function f()
+        {
+            let num = document.getElementById("name").value;
+            let nameval  = /^[A-Z][a-z]+$/;
+            if(num.search(nameval)==0)
+        {
+            document.getElementById("name").style.border = "1px solid blue";
+        }
+        else
+        {
+            document.getElementById("name").style.border = "1px solid red";
+        }
+
+
+        let lnum = document.getElementById("lname").value;
+            if(lnum.search(nameval)==0)
+        {
+            document.getElementById("lname").style.border = "1px solid blue";
+        }
+        else
+        {
+            document.getElementById("lname").style.border = "1px solid red";
+        }
+
+
+        let  llnum = document.getElementById("eman").value;
+        let emailval = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if(llnum.search(emailval)==0)
+        {
+            document.getElementById("eman").style.border = "1px solid blue";
+        }
+        else
+        {
+            document.getElementById("eman").style.border = "1px solid red";
+        }
+
+        let  lllnum = document.getElementById("phn").value;
+        let numberval = /[0-9]{10}$/; 
+            if(lllnum.search(numberval)==0)
+        {
+            document.getElementById("phn").style.border = "1px solid blue";
+        }
+        else
+        {
+            document.getElementById("phn").style.border = "1px solid red";
+        }
+        }
+    </script>
+    <style>
+        #a
+        {
+            background: url("snow\ image.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        div
+        {
+            width: 50%;
+            height: 700px;
+            margin: 5px;
+            
+        }
+        section
+        {
+            display: flex;
+            justify-content: center;
+        }
+        table
+        {
+            width: 100%;
+            opacity: 70%;
+        }
+        input
+        {
+            width: 97%; 
+        }
+        #name, #lname
+        {
+            width: 48%;
+        }
+        button
+        {
+            padding: 10px;
+            background-color: rgb(14, 227, 113);
+            border: none;
+        }
+    </style>
+    
+</body>
+</html>

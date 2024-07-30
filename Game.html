@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body> 
+    <section id="a" onchange="f()">
+    <div id="front"><img src="four-hearts-playing-card-isolated-260nw-134168915.jpg"></div>
+    <div id="front2"><img src="four-spades-playing-card-isolated-260nw-134170295.jpg"></div>
+    <div id="front3"><img src="images.jpeg"></div>
+
+    <div id="back">Winner or Looser</div>
+    <div id="back2">Winner or Looser</div>
+    <div id="back3">Winner or Looser</div>
+    </section>
+    
+    <center><p id="b"><big><i>Please choose</i></big></p></center>
+    
+    <script>
+        function f()
+            {
+                
+              let a = document.getElementById("a").value;
+              let c =Math.ceil( Math.random()*3);
+
+              if(a==c)
+              {
+              document.getElementById("b").innerHTML="Winner";
+              }
+              else
+              {
+                document.getElementById("b").innerHTML="Looser"
+              }
+
+                
+
+            }
+        
+       
+      
+    </script>
+    <style>
+        section
+        {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        div
+        {
+            margin: 20px;
+            box-shadow: 0 0  20px  black;
+            border-radius: 15px;
+            overflow: hidden;
+
+        }
+        body
+        {
+            background-color: rgb(225, 246, 195);
+        }
+        #b
+        {
+            color: rgb(18, 145, 123);
+        }
+        #back
+        {
+            transition: 3s;
+            color: rgb(55, 39, 235);
+            transform: rotateY(180deg);
+        }
+        #back:hover
+        {
+            transform: rotateY(180deg);
+        }
+        #back2
+        {
+            transition: 3s;
+            color: rgb(82, 50, 244);
+            transform: rotateY(180deg);
+        }
+        #back2:hover
+        {
+            transform: rotateY(180deg);
+        }
+        #back3
+        {
+            transition: 3s;
+            color: rgb(99, 51, 242);
+            transform: rotateY(180deg);
+        }
+        #back3:hover
+        {
+            transform: rotateY(180deg);
+        }
+        #front
+        {
+            background-color: rgb(49, 49, 242);
+            transition: 3s;
+        }
+        #front:hover
+        {
+            transform: translateZ(180deg);
+        }
+        #front2
+        {
+            background-color: rgb(78, 56, 243);
+            transition: 3s;
+        }
+        #front2:hover
+        {
+            transform: translateZ(180deg);
+        }
+        #front3
+        {
+            background-color: rgb(72, 57, 241);
+            transition: 3s;
+        }
+        #front3:hover
+        {
+            transform: translateZ(180deg);
+        }
+        
+        
+    </style>
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie ticket</title>
+</head>
+<body>
+    <p id="b">Please Select a Movie</p>
+   
+    <select id="a" onchange="f()">
+        <option>Choose a Movie</option>
+        <option>Stree2</option>
+        <option>Pushpa2</option>
+    </select>
+    <input type="number" id="nm" onchange="f()">
+    <p id="cc"></p>
+
+    <script>
+        function f()
+        {
+            let a=document.getElementById("a").value;
+            let nm = document.getElementById("nm").value;
+
+            if(a=="Choose a Movie")
+        {
+            document.getElementById("b").innerHTML="Please Select a movie";
+        }
+        else if(a=="Stree2")
+        {
+            document.getElementById("b").innerHTML="Rs.250/p";
+            document.getElementById("cc").innerHTML = 250*nm;
+        }
+        else if(a=="Pushpa2")
+        {
+            document.getElementById("b").innerHTML="Rs.300/p";
+            document.getElementById("cc").innerHTML = 300*nm;
+
+        }
+        }
+
+    </script>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <div id="boxinner">
+        <div id="front">
+        <img src="Photos/01a9f20f8491d566806cf2d0ccfbe1ce.jpg" width="400px" height="400px">
+        </div>
+
+        <div id="back">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda doloribus dolor, provident ullam harum libero voluptatem vel architecto quisquam eius hic asperiores distinctio ipsam aperiam! Voluptatem illum laborum minima cumque!</p>
+        <button>CLICK ME</button>
+        </div>
+        </div>
+    </div>
+
+    <style>
+        #box
+        {
+            background-color: rgb(52, 216, 216);
+            width: 400px;
+            height: 400px;
+            border: 6px double blue;
+            border-radius: 30px;
+            overflow: hidden;
+
+        }
+
+        #front
+        {
+            background-color: bisque;
+            transition: 3s;
+
+
+        }
+        #front, #back
+        {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            backface-visibility: hidden;
+            
+        }
+
+        #back:hover
+        {
+            transform: rotateY(180deg);
+        }
+        #back
+        {
+            transition: 3s;
+            color: white;
+            transform: rotateY(180deg);
+        }
+        #front:hover
+        {
+            transform: translateZ(180deg);
+        }
+        #box:hover #boxinner
+        {
+            transform: rotateY(180deg);
+        }
+        #boxinner
+        {
+            transition: 1s;
+            transform-style: preserve-3d;
+        }
+        
+        
+       
+    </style>
+    
+</body>
+</html>
